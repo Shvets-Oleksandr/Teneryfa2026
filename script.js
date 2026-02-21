@@ -147,23 +147,31 @@ function renderTrip() {
     day.events.forEach((ev, eIdx) => {
       const id = `ev-${dIdx}-${eIdx}`;
       const isDone = completed.includes(id) ? "completed" : "";
-      // Link do wyszukiwarki zdjęć Google dla danego miejsca
-      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+
+      const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(
         ev.title + " Tenerife"
       )}&udm=2`;
 
+      // UŻYWAMY BACKTICKÓW (znak pod klawiszem ESC) I DODAJEMY $ PRZED {ev.gps}
       html += `
                 <div class="event ${isDone}" id="${id}">
                     <div class="check-btn" onclick="toggleComplete('${id}')"></div>
                     <span class="time">${ev.time}</span>
                     <strong class="location-name">${ev.title}</strong>
                     <p>${ev.desc}</p>
-                    <a href="${searchUrl}" target="_blank" class="thumbnail-link">
-                        <img src="${ev.img}" alt="${ev.title}" class="event-thumb">
-                        <span class="thumb-hint">Kliknij, aby zobaczyć zdjęcia</span>
+                    
+                    <div class="event-img-container" onclick="openLightbox('${ev.img}')">
+                        <img src="${ev.img}" alt="${ev.title}">
+                    </div>
+                    
+                    <a href="${googleImagesUrl}" target="_blank" class="google-search-link">
+                        🔍 Zobacz więcej zdjęć z ${ev.title}
                     </a>
-                    <div class="btn-group">
-                        <a href="https://www.google.com/maps/search/?api=1&query=$${ev.gps}" class="btn btn-map" target="_blank">📍 Nawiguj</a>
+
+                    <div class="btn-group" style="margin-top:15px;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=${ev.gps}" class="btn btn-map" target="_blank">
+                            📍 Nawiguj do celu
+                        </a>
                     </div>
                 </div>`;
     });
