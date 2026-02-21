@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teneryfa 2026 | Przewodnik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>🌴 Teneryfa 2026</h1>
+      <div class="countdown" id="countdown">Liczenie czasu...</div>
+    </header>
+
+    <div class="container">
+      <div id="itinerary-app"></div>
+
+      <hr class="separator" />
+
+      <section class="extra-section">
+        <h2>🧳 Lista Pakowania</h2>
+        <div class="packing-grid" id="packing-list"></div>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="extra-section emergency">
+        <h2>📞 Ważne Numery</h2>
+        <div class="contact-card">
+          <p>
+            <strong>🚨 Alarmowy (Ogólny):</strong> <a href="tel:112">112</a>
+          </p>
+          <p><strong>🚑 Pogotowie:</strong> <a href="tel:061">061</a></p>
+          <p>
+            <strong>📞 Plus Car (Chafiras):</strong>
+            <a href="tel:+34922311111">+34 922 311 111</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+      <span class="close-lightbox">×</span>
+      <img src="" id="lightbox-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
