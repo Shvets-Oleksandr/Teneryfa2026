@@ -152,7 +152,6 @@ function renderTrip() {
         ev.title + " Tenerife"
       )}&udm=2`;
 
-      // UŻYWAMY BACKTICKÓW (znak pod klawiszem ESC) I DODAJEMY $ PRZED {ev.gps}
       html += `
                 <div class="event ${isDone}" id="${id}">
                     <div class="check-btn" onclick="toggleComplete('${id}')"></div>
