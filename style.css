@@ -214,3 +214,38 @@ header {
   margin-top: 5px;
   font-style: italic;
 }
+
+.event-img-container {
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;    /* To ucina zdjęcie, jeśli wystaje poza ramkę */
+    border-radius: 12px;
+    height: 200px;       /* Wysokość miniatury na telefonie */
+    width: 100%;         /* Szerokość na całą kartę */
+    background-color: #f0f0f0;
+}
+
+.event-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Kluczowe: zdjęcie wypełnia ramkę bez rozciągania */
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Opcjonalnie: efekt po najechaniu myszką na komputerze */
+.event-img-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Poprawka dla linku pod zdjęciem */
+.google-search-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
+}
