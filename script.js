@@ -5,7 +5,7 @@ const tripData = [
       {
         time: "09:30",
         title: "Odbiór auta - Plus Car",
-        gps: "28.0583, -16.6214",
+        gps: "28.0524393, -16.6150898",
         desc: "Las Chafiras. Sprawdź stan lakieru i poziom paliwa!",
         img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800",
       },
@@ -149,7 +149,7 @@ function renderTrip() {
       const isDone = completed.includes(id) ? "completed" : "";
 
       const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(
-        ev.title + " Tenerife"
+        ev.title + " Tenerife",
       )}&udm=2`;
 
       // UŻYWAMY BACKTICKÓW (znak pod klawiszem ESC) I DODAJEMY $ PRZED {ev.gps}
