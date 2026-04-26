@@ -163,54 +163,75 @@ header {
   border-top: 2px dashed #ccc;
 }
 
-/* Lightbox */
+/* --- Lightbox --- */
 #lightbox {
   display: none;
   position: fixed;
   z-index: 2000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
 }
-#lightbox.active {
-  display: flex;
-}
+#lightbox.active { display: flex; }
 #lightbox img {
-  max-width: 90%;
-  max-height: 80%;
+  max-width: 95%;
+  max-height: 85%;
   border-radius: 10px;
 }
 
-.event-thumb {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-top: 10px;
-  border: 2px solid #ddd;
-  transition: transform 0.2s;
+/* --- Miniatury (Poprawione) --- */
+.event-img-container {
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;    
+    border-radius: 12px;
+    height: 200px;       
+    width: 100%;         
+    background-color: #f0f0f0;
 }
 
-.event-thumb:hover {
-  transform: scale(1.02);
-  border-color: var(--primary);
+.event-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To naprawia Twój problem! */
+    object-position: center;
+    display: block;
 }
 
-.thumbnail-link {
-  display: block;
-  position: relative;
-  text-decoration: none;
+.google-search-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
+    text-align: right;
 }
 
-.thumb-hint {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--primary);
-  text-align: center;
-  margin-top: 5px;
-  font-style: italic;
+
+.event-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Kluczowe: zdjęcie wypełnia ramkę bez rozciągania */
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Opcjonalnie: efekt po najechaniu myszką na komputerze */
+.event-img-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Poprawka dla linku pod zdjęciem */
+.google-search-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
 }
