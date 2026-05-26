@@ -5,35 +5,35 @@ const tripData = [
       {
         time: "09:30",
         title: "Odbiór auta - Plus Car",
-        gps: "28.0524393, -16.6150898",
+        gps: "28.058774,-16.613589", // Dokładne biuro Plus Car w Las Chafiras
         desc: "Las Chafiras. Sprawdź stan lakieru i poziom paliwa!",
         img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800",
       },
       {
         time: "10:30",
         title: "Vilaflor Pine Forest (Pino Gordo)",
-        gps: "28.1633, -16.6358",
+        gps: "28.163351,-16.635443", // Parking tuż przy słynnej sośnie Pino Gordo
         desc: "Przystanek przy gigantycznej sośnie. Powietrze pachnie tu żywicą.",
         img: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800",
       },
       {
         time: "12:00",
         title: "Teide Teleférico",
-        gps: "28.2547, -16.6258",
+        gps: "28.253942,-16.624176", // Dolna stacja kolejki i parking
         desc: "Wjazd kolejką na wulkan. Pamiętaj, że na górze jest zimno!",
         img: "https://images.unsplash.com/photo-1560945532-35393439972b?auto=format&fit=crop&w=800",
       },
       {
         time: "14:15",
         title: "Roques de García",
-        gps: "28.2238, -16.6297",
+        gps: "28.223592,-16.629399", // Parking przy punkcie widokowym i skale "Palec Boży"
         desc: "Spacer wokół słynnych skał. Łatwa trasa dla każdego.",
         img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800",
       },
       {
         time: "16:30",
         title: "Mirador de Chipeque",
-        gps: "28.4005, -16.4606",
+        gps: "28.400511,-16.460778", // Dokładny punkt widokowy na krawędzi platformy
         desc: "Panoramiczny widok na Teide ponad chmurami.",
         img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800",
       },
@@ -45,21 +45,21 @@ const tripData = [
       {
         time: "10:30",
         title: "Rejs z Los Gigantes",
-        gps: "28.2461, -16.8423",
+        gps: "28.246101,-16.842502", // Port w Los Gigantes, skąd odpływają łodzie
         desc: "Delfiny, wieloryby i niesamowite klify widziane z oceanu.",
         img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=800",
       },
       {
         time: "13:30",
         title: "Basen Isla Cangrejo",
-        gps: "28.2408, -16.8419",
+        gps: "28.239634,-16.841578", // Bezpośrednie zejście do naturalnego basenu
         desc: "Kąpiel w naturalnym basenie (tylko przy spokojnym morzu!).",
         img: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800",
       },
       {
         time: "15:00",
         title: "Plaża Abama",
-        gps: "28.1736, -16.8016",
+        gps: "28.171455,-16.802355", // Parking dla gości plaży (stamtąd schodzi się w dół)
         desc: "Złoty piasek i spokojna zatoka na relaks.",
         img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800",
       },
@@ -71,14 +71,14 @@ const tripData = [
       {
         time: "10:00",
         title: "Loro Parque",
-        gps: "28.4086, -16.5645",
+        gps: "28.407955,-16.564612", // Główny parking dla odwiedzających Loro Parque
         desc: "Pokazy orek, delfinów i pingwinarium.",
         img: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800",
       },
       {
         time: "16:30",
         title: "Barranco de Ruiz",
-        gps: "28.3892, -16.6389",
+        gps: "28.389144,-16.638421", // Strefa rekreacyjna i początek szlaku w wąwozie
         desc: "Malowniczy wąwóz – chwila oddechu w naturze.",
         img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800",
       },
@@ -90,28 +90,28 @@ const tripData = [
       {
         time: "10:00",
         title: "Camino Viejo al Pico del Inglés",
-        gps: "28.5325, -16.2673",
+        gps: "28.532391,-16.267633", // Dokładne wejście do "zielonego tunelu" z drzew
         desc: "Słynny tunel w lesie laurowym (Anaga).",
         img: "https://images.unsplash.com/photo-1444333509402-1a40316e6417?auto=format&fit=crop&w=800",
       },
       {
         time: "13:00",
         title: "Mirador Altos de Baracán",
-        gps: "28.3392, -16.8524",
+        gps: "28.339455,-16.852331", // Mała zatoczka parkingowa przy punkcie widokowym
         desc: "Góry Teno - granica między zieloną a suchą częścią wyspy.",
         img: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800",
       },
       {
         time: "14:30",
         title: "Punta de Teno",
-        gps: "28.3712, -16.8525",
+        gps: "28.371192,-16.852445", // Koordynaty samej latarni (pamiętaj o autobusie 369!)
         desc: "Latarnia morska. Wjazd tylko autobusem 369 z Buenavista!",
         img: "https://images.unsplash.com/photo-1500049241444-d5966d9b6028?auto=format&fit=crop&w=800",
       },
       {
         time: "20:00",
         title: "Zwrot auta (Las Chafiras)",
-        gps: "28.0583, -16.6214",
+        gps: "28.058774,-16.613589", // Ponownie biuro Plus Car
         desc: "Zatankuj przed oddaniem! Koniec przygody.",
         img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800",
       },
@@ -148,9 +148,12 @@ function renderTrip() {
       const id = `ev-${dIdx}-${eIdx}`;
       const isDone = completed.includes(id) ? "completed" : "";
 
-      const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(
-        ev.title + " Tenerife",
-      )}&udm=2`;
+      const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(ev.title + " Tenerife")}&udm=2`;
+
+      // KLUCZOWA POPRAWKA: Dodajemy "q=" przed współrzędnymi, żeby Google Maps wiedziało, że to pinezka
+      const encodedGps = encodeURIComponent(ev.gps);
+      const iframeUrl = `https://maps.google.com/maps?q=${encodedGps}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+      const navUrl = `https://www.google.com/maps/search/?api=1&query=${encodedGps}`;
 
       html += `
                 <div class="event ${isDone}" id="${id}">
@@ -167,9 +170,20 @@ function renderTrip() {
                         🔍 Zobacz więcej zdjęć z ${ev.title}
                     </a>
 
-                    <div class="btn-group" style="margin-top:15px;">
-                        <a href="https://www.google.com/maps/search/?api=1&query=${ev.gps}" class="btn btn-map" target="_blank">
-                            📍 Nawiguj do celu
+                    <div class="map-container">
+                        <iframe 
+                            src="${iframeUrl}" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="btn-group" style="margin-top:10px;">
+                        <a href="${navUrl}" class="btn btn-map" target="_blank">
+                            🚀 Uruchom Nawigację
                         </a>
                     </div>
                 </div>`;

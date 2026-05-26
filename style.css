@@ -93,6 +93,9 @@ header {
   color: white;
   flex: 1;
   text-align: center;
+  display: block;
+  width: 100%;
+  padding: 12px;
 }
 .btn-img {
   background: #eee;
@@ -168,70 +171,64 @@ header {
   display: none;
   position: fixed;
   z-index: 2000;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
 }
-#lightbox.active { display: flex; }
+#lightbox.active {
+  display: flex;
+}
 #lightbox img {
   max-width: 95%;
   max-height: 85%;
   border-radius: 10px;
 }
 
-/* --- Miniatury (Poprawione) --- */
+/* --- Miniatury --- */
 .event-img-container {
-    margin: 15px 0 5px 0;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;    
-    border-radius: 12px;
-    height: 200px;       
-    width: 100%;         
-    background-color: #f0f0f0;
+  margin: 15px 0 5px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
 }
 
 .event-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* To naprawia Twój problem! */
-    object-position: center;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.google-search-link {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 0.8rem;
-    color: var(--primary);
-    text-decoration: none;
-    font-style: italic;
-    text-align: right;
-}
-
-
-.event-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   /* Kluczowe: zdjęcie wypełnia ramkę bez rozciągania */
-    object-position: center;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-/* Opcjonalnie: efekt po najechaniu myszką na komputerze */
 .event-img-container:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* Poprawka dla linku pod zdjęciem */
 .google-search-link {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 0.8rem;
-    color: var(--primary);
-    text-decoration: none;
-    font-style: italic;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-style: italic;
+  text-align: right;
+}
+
+/* --- NOWOŚĆ: Kontener na mapę iframe --- */
+.map-container {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #e5e3df;
 }
