@@ -5,7 +5,8 @@ const tripData = [
       {
         time: "09:30",
         title: "Odbiór auta - Plus Car",
-        gps: "28.058774,-16.613589", // Dokładne biuro Plus Car w Las Chafiras
+        // TUTAJ wklejasz pełny link skopiowany z Google Maps:
+        mapUrl: "https://maps.app.goo.gl/ea8hHftNR3X8BrY97",
         desc: "Las Chafiras. Sprawdź stan lakieru i poziom paliwa!",
         img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800",
       },
@@ -150,10 +151,12 @@ function renderTrip() {
 
       const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(ev.title + " Tenerife")}&udm=2`;
 
-      // KLUCZOWA POPRAWKA: Dodajemy "q=" przed współrzędnymi, żeby Google Maps wiedziało, że to pinezka
-      const encodedGps = encodeURIComponent(ev.gps);
-      const iframeUrl = `https://maps.google.com/maps?q=${encodedGps}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-      const navUrl = `https://www.google.com/maps/search/?api=1&query=${encodedGps}`;
+      // NAWIGACJA: Przycisk kieruje bezpośrednio na Twój wklejony link z Google Maps
+      const navUrl = ev.mapUrl;
+
+      // EMBED: Przerabiamy zwykły link z Google Maps na wersję bezpieczną dla okienka iframe
+      const encodedUrl = encodeURIComponent(ev.mapUrl);
+      const iframeUrl = `https://maps.google.com/maps?q=${encodedUrl}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
       html += `
                 <div class="event ${isDone}" id="${id}">
