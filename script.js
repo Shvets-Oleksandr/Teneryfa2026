@@ -137,7 +137,6 @@ function init() {
   startCountdown();
 }
 
-//render nawigajci
 function renderTrip() {
   const app = document.getElementById("itinerary-app");
   app.innerHTML = "";
