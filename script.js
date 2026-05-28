@@ -1,5 +1,3 @@
-const GOOGLE_API_KEY = "TWÓJ_KLUCZ_API_TUTAJ";
-
 const tripData = [
   {
     day: "Dzień 1 (16.06): Wulkaniczna Potęga",
