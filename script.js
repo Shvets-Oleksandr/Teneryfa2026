@@ -1,3 +1,5 @@
+const GOOGLE_API_KEY = "TWÓJ_KLUCZ_API_TUTAJ";
+
 const tripData = [
   {
     day: "Dzień 1 (16.06): Wulkaniczna Potęga",
@@ -5,24 +7,34 @@ const tripData = [
       {
         time: "09:30",
         title: "Odbiór auta - Plus Car",
-        // TUTAJ wklejasz pełny link skopiowany z Google Maps:
-        mapUrl: "https://maps.app.goo.gl/ea8hHftNR3X8BrY97",
+        // 1. Link do nawigacji (z paska przeglądarki)
+        navUrl: "https://maps.app.goo.gl/Nf6jSo78UeVdhBuW8",
+        // 2. Link z kodu iframe (tylko to, co jest wewnątrz src="...")
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6689.727159084362!2d-16.61190766941786!3d28.052311007519783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a9f3dad2b9597%3A0x4eea3c0821d4c87d!2sPlus%20Car%20Rent%20a%20Car!5e0!3m2!1spl!2spl!4v1779957042671!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Las Chafiras. Sprawdź stan lakieru i poziom paliwa!",
-        img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779956448827!6m8!1m7!1skoU8Ux49h08DzRwC8grNKw!2m2!1d28.05206661827112!2d-16.608422317487!3f356.05751310964!4f-4.870469298641979!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
         time: "10:30",
         title: "Vilaflor Pine Forest (Pino Gordo)",
-        gps: "28.163351,-16.635443", // Parking tuż przy słynnej sośnie Pino Gordo
+        navUrl: "https://maps.app.goo.gl/wAcZaEWiSVViuBJZ8",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2018.9130699843902!2d-16.638059326978762!3d28.16508611857211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a9b7b314eaf23%3A0xda05f7de2ab25f57!2sPino%20Gordo!5e0!3m2!1spl!2spl!4v1779957440727!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Przystanek przy gigantycznej sośnie. Powietrze pachnie tu żywicą.",
-        img: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779954022116!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHEzT3loWnc.!2m2!1d28.16529898293365!2d-16.6369230194622!3f214.21439015738676!4f-10.389507572186076!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
         time: "12:00",
         title: "Teide Teleférico",
-        gps: "28.253942,-16.624176", // Dolna stacja kolejki i parking
+        navUrl: "https://maps.app.goo.gl/KjXmGivRZSqspM1bA",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.4082036784416!2d-16.625360260850254!3d28.25563670365553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8385d9ab9637%3A0x4aaebf1d939f900a!2sAparcamiento%20del%20telef%C3%A9rico%20del%20Pico%20del%20Teide!5e0!3m2!1spl!2spl!4v1779957613119!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Wjazd kolejką na wulkan. Pamiętaj, że na górze jest zimno!",
-        img: "https://images.unsplash.com/photo-1560945532-35393439972b?auto=format&fit=crop&w=800",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779957825283!6m8!1m7!1s7AMJLwurxOQ6sChtLlgK4Q!2m2!1d28.25617163481968!2d-16.62314821441575!3f352.9328356105298!4f0.1081054031439237!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
         time: "14:15",
@@ -151,12 +163,31 @@ function renderTrip() {
 
       const googleImagesUrl = `https://www.google.com/search?q=${encodeURIComponent(ev.title + " Tenerife")}&udm=2`;
 
-      // NAWIGACJA: Przycisk kieruje bezpośrednio na Twój wklejony link z Google Maps
-      const navUrl = ev.mapUrl;
+      // 1. PRZYGOTOWANIE KONTENERA STREET VIEW
+      let streetViewContent = "";
+      if (ev.streetViewIframe && ev.streetViewIframe.trim() !== "") {
+        streetViewContent = ev.streetViewIframe
+          .replace(/width="\d+"/, 'width="100%"')
+          .replace(/height="\d+"/, 'height="220"');
+      } else if (ev.img && ev.img.trim() !== "") {
+        streetViewContent = `<div class="event-img-container" onclick="openLightbox('${ev.img}')">
+                                <img src="${ev.img}" alt="${ev.title}">
+                             </div>`;
+      } else {
+        streetViewContent = `<div class="event-img-container">
+                                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800" alt="Tenerife">
+                             </div>`;
+      }
 
-      // EMBED: Przerabiamy zwykły link z Google Maps na wersję bezpieczną dla okienka iframe
-      const encodedUrl = encodeURIComponent(ev.mapUrl);
-      const iframeUrl = `https://maps.google.com/maps?q=${encodedUrl}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+      // 2. PRZYGOTOWANIE KONTENERA ZWYKŁEJ MAPY
+      let mapContent = "";
+      if (ev.mapIframe && ev.mapIframe.trim() !== "") {
+        mapContent = ev.mapIframe
+          .replace(/width="\d+"/, 'width="100%"')
+          .replace(/height="\d+"/, 'height="200"');
+      } else {
+        mapContent = `<p style="color: #666; font-size: 13px; padding: 10px;">Brak podglądu mapy</p>`;
+      }
 
       html += `
                 <div class="event ${isDone}" id="${id}">
@@ -165,27 +196,20 @@ function renderTrip() {
                     <strong class="location-name">${ev.title}</strong>
                     <p>${ev.desc}</p>
                     
-                    <div class="event-img-container" onclick="openLightbox('${ev.img}')">
-                        <img src="${ev.img}" alt="${ev.title}">
+                    <div class="streetview-container" style="border-radius: 8px; overflow: hidden; margin-bottom: 10px; background: #eee;">
+                        ${streetViewContent}
                     </div>
                     
                     <a href="${googleImagesUrl}" target="_blank" class="google-search-link">
                         🔍 Zobacz więcej zdjęć z ${ev.title}
                     </a>
 
-                    <div class="map-container">
-                        <iframe 
-                            src="${iframeUrl}" 
-                            width="100%" 
-                            height="200" 
-                            style="border:0; border-radius: 8px;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
+                    <div class="map-container" style="border-radius: 8px; overflow: hidden; background: #eee; margin-top: 10px;">
+                        ${mapContent}
                     </div>
 
                     <div class="btn-group" style="margin-top:10px;">
-                        <a href="${navUrl}" class="btn btn-map" target="_blank">
+                        <a href="${ev.navUrl}" class="btn btn-map" target="_blank">
                             🚀 Uruchom Nawigację
                         </a>
                     </div>
