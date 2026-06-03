@@ -3,7 +3,7 @@ const tripData = [
     day: "Dzień 1 (16.06): Wulkaniczna Potęga",
     events: [
       {
-        time: "09:30",
+        time: "09:00 – 09:30",
         title: "Odbiór auta - Plus Car",
         // 1. Link do nawigacji (z paska przeglądarki)
         navUrl: "https://maps.app.goo.gl/Nf6jSo78UeVdhBuW8",
@@ -11,42 +11,57 @@ const tripData = [
         mapIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6689.727159084362!2d-16.61190766941786!3d28.052311007519783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a9f3dad2b9597%3A0x4eea3c0821d4c87d!2sPlus%20Car%20Rent%20a%20Car!5e0!3m2!1spl!2spl!4v1779957042671!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Las Chafiras. Sprawdź stan lakieru i poziom paliwa!",
+        parkDesc: "Parking na terenie biura Plus Car",
         streetViewIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!4v1779956448827!6m8!1m7!1skoU8Ux49h08DzRwC8grNKw!2m2!1d28.05206661827112!2d-16.608422317487!3f356.05751310964!4f-4.870469298641979!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "10:30",
+        time: "10:30 – 11:15",
         title: "Vilaflor Pine Forest (Pino Gordo)",
         navUrl: "https://maps.app.goo.gl/wAcZaEWiSVViuBJZ8",
         mapIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2018.9130699843902!2d-16.638059326978762!3d28.16508611857211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a9b7b314eaf23%3A0xda05f7de2ab25f57!2sPino%20Gordo!5e0!3m2!1spl!2spl!4v1779957440727!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Przystanek przy gigantycznej sośnie. Powietrze pachnie tu żywicą.",
+        parkDesc:
+          "Bezpośrednio przy drodze TF-21 znajduje się zatoczka parkingowa na kilka samochodów (tuż przy samym drzewie). Jeśli będzie pełna, 200 metrów dalej jest kolejny punkt widokowy z miejscami postojowymi. Parkowanie jest darmowe.",
         streetViewIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!4v1779954022116!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHEzT3loWnc.!2m2!1d28.16529898293365!2d-16.6369230194622!3f214.21439015738676!4f-10.389507572186076!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "12:00",
+        time: "12:00 – 14:00",
         title: "Teide Teleférico",
         navUrl: "https://maps.app.goo.gl/KjXmGivRZSqspM1bA",
         mapIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.4082036784416!2d-16.625360260850254!3d28.25563670365553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8385d9ab9637%3A0x4aaebf1d939f900a!2sAparcamiento%20del%20telef%C3%A9rico%20del%20Pico%20del%20Teide!5e0!3m2!1spl!2spl!4v1779957613119!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Wjazd kolejką na wulkan. Pamiętaj, że na górze jest zimno!",
+        parkDesc:
+          "Przy dolnej stacji kolejki jest duży, bezpłatny parking. Porada: Parking zapełnia się błyskawicznie. Ponieważ macie wjazd na 12:00, bądźcie na miejscu minimum 30-40 minut wcześniej. Jeśli zabraknie miejsc na głównym placu, ludzie parkują wzdłuż drogi, co oznacza dodatkowy spacer pod górę z dzieckiem.",
         streetViewIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!4v1779957825283!6m8!1m7!1s7AMJLwurxOQ6sChtLlgK4Q!2m2!1d28.25617163481968!2d-16.62314821441575!3f352.9328356105298!4f0.1081054031439237!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "14:15",
+        time: "14:15 – 15:30",
         title: "Roques de García",
-        gps: "28.223592,-16.629399", // Parking przy punkcie widokowym i skale "Palec Boży"
+        navUrl: "https://maps.app.goo.gl/qcjeJbV65DpmFgP48",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.4318129542407!2d-16.631052757166195!3d28.22457045487444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a85878499b799%3A0xbb1dc27f743f7f40!2sSendero%20Roques%20de%20Garc%C3%ADa!5e0!3m2!1spl!2spl!4v1780484890737!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Spacer wokół słynnych skał. Łatwa trasa dla każdego.",
-        img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800",
+        parkDesc:
+          "Duży darmowy parking znajduje się przy punkcie widokowym Mirador de la Ruleta (naprzeciwko hotelu Parador). Porada: To jedno z najbardziej zatłoczonych miejsc w parku. Rotacja aut jest jednak duża – jeśli nie ma miejsca, warto postać 5 minut i poczekać, aż ktoś wyjedzie.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1780485146282!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ253YUdEd0FF!2m2!1d28.22523223911946!2d-16.63149800841395!3f20.440599466119195!4f-5.01314213450901!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "16:30",
+        time: "16:30 – 17:15",
         title: "Mirador de Chipeque",
-        gps: "28.400511,-16.460778", // Dokładny punkt widokowy na krawędzi platformy
+        navUrl: "https://maps.app.goo.gl/BjgkSan7F9Mac6a99",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.823965690339!2d-16.464499769426382!3d28.37478534459868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402b6cadcf9a23%3A0x936ea81287b57298!2sMirador%20de%20Chipeque!5e0!3m2!1spl!2spl!4v1780485396068!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Panoramiczny widok na Teide ponad chmurami.",
-        img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800",
+        parkDesc:
+          "Bezpośrednio przy punkcie widokowym jest szutrowy, darmowy plac na kilkanaście aut. Zazwyczaj nie ma problemu z miejscem.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1780485903886!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VwODNtMHdF!2m2!1d28.37398932082786!2d-16.46390155859214!3f242.95439515274214!4f4.386538531311459!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
     ],
   },
@@ -192,7 +207,8 @@ function renderTrip() {
                     <div class="check-btn" onclick="toggleComplete('${id}')"></div>
                     <span class="time">${ev.time}</span>
                     <strong class="location-name">${ev.title}</strong>
-                    <p>${ev.desc}</p>
+                    <h4>${ev.desc}</h4>
+                    <p>${ev.parkDesc}</p>
                     
                     <div class="streetview-container" style="border-radius: 8px; overflow: hidden; margin-bottom: 10px; background: #eee;">
                         ${streetViewContent}
