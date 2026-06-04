@@ -75,33 +75,44 @@ const tripData = [
   {
     day: "Dzień 2 (17.06): Zachodnie Wybrzeże",
     dayTips:
-      "Zawsze sprawdzaj stan oceanu przed wejściem do naturalnych basenów!",
+      "Choroba morska: Ocean w okolicach Los Gigantes bywa spokojny, ale na mniejszej łodzi i tak kołysze. Jeśli córka ma skłonności do choroby lokomocyjnej, warto podać jej lek odpowiednio wcześniej przed rejsem. Zawsze sprawdzaj stan oceanu przed wejściem do naturalnych basenów!Jeśli fale mocno uderzają o murek i woda w basenie gotuje się, zrezygnujcie z kąpieli z dzieckiem",
     dayChecklist: ["Ręczniki i stroje kąpielowe", "Krem przeciwsłoneczny"],
     events: [
       {
-        time: "10:30",
+        time: "10:30 – 13:00",
         title: "Rejs z Los Gigantes",
-        navUrl: "https://maps.google.com/?q=28.246101,-16.842502",
+        navUrl: "https://maps.app.goo.gl/uaSCPoX9rRTyucLi7",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.372622131209!2d-16.842199331479122!3d28.246615174399174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8de019bae3a7%3A0xa61c742adcc39302!2sCarpark!5e0!3m2!1spl!2spl!4v1780577670647!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Delfiny, wieloryby i niesamowite klify widziane z oceanu.",
-        parkDesc: "Parking w porcie Los Gigantes (płatny).",
-        img: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=800",
+        parkDesc:
+          "W samym porcie jest płatny parking szlabanowy (Marina Puerto de Los Gigantes). Jest dość drogi, ale to najwygodniejsza opcja z dzieckiem, bo wysiadacie tuż przy łodziach. Alternatywa to darmowe miejsca przy ulicach wyżej (np. Calle Los Guíos), ale znalezienie wolnego miejsca graniczy z cudem, a podejścia są bardzo strome. Uważajcie na siebie i NIE ZOSTAWIAJCIE NICZEGO WARTOŚCIOWEGO w aucie!!!",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1780577822610!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDR2UFNVcWdF!2m2!1d28.24749954361874!2d-16.84416579214025!3f41.693896422317174!4f-20.214225314688434!5f0.5057130658680941" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "13:30",
+        time: "13:15 – 14:15",
         title: "Basen Isla Cangrejo",
-        navUrl: "https://maps.google.com/?q=28.239634,-16.841578",
+        navUrl: "https://maps.app.goo.gl/BDe4Pbft2rcWVa5L8",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.4370831085607!2d-16.84391151305992!3d28.241498762460218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8c402227708d%3A0x4f0639bbe252c212!2sCharco%20de%20Isla%20Cangrejo!5e0!3m2!1spl!2spl!4v1780578304055!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Kąpiel w naturalnym basenie (tylko przy spokojnym morzu!).",
-        parkDesc: "Parkowanie przy wąskich uliczkach mieszkalnych.",
-        img: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800",
+        parkDesc:
+          "Brak dedykowanego parkingu. Trzeba szukać darmowych miejsc wzdłuż ulicy Calle Callejon de la Arena lub sąsiednich w dzielnicy mieszkalnej. Stamtąd schodzi się pieszo w dół do oceanu.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1780578467969!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ01yOExwWnc.!2m2!1d28.24148187984822!2d-16.84313511592166!3f22.24607420309643!4f-15.263037940432767!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "15:00",
+        time: "15:00 – 18:00",
         title: "Plaża Abama",
-        navUrl: "https://maps.google.com/?q=28.171455,-16.802355",
+        navUrl: "https://maps.app.goo.gl/ActAyRDB9NSLmzus8",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.1658447071877!2d-16.800722435453316!3d28.171871348132395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a91797b651469%3A0x92789fa7d7b23c2c!2sParking%20gratis!5e0!3m2!1spl!2spl!4v1780578713332!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         desc: "Złoty piasek i spokojna zatoka na relaks.",
         parkDesc:
-          "Bezpłatny parking dla gości plaży przy hotelu Ritz-Carlton, skąd schodzi się na dół pieszo lub zjeżdża kolejką.",
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800",
+          "Plaża znajduje się pod luksusowym hotelem Ritz-Carlton. Dla gości z zewnątrz przeznaczony jest darmowy parking publiczny (oznaczony jako Aparcamiento Playa Abama), znajdujący się przed wjazdem na teren hotelu. Ważne Z parkingu na plażę czeka Was około 10-15 minut spaceru asfaltową, dość stromą drogą w dół (w powrotnej drodze pod górę dla 5-latki może to być wyzwanie). Kiedyś kursowała tam hotelowa kolejka, ale obecnie jest tylko dla gości hotelu.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1780578817688!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzA1ckw3dWdF!2m2!1d28.17213839171249!2d-16.80531719217237!3f330.92512220217696!4f-6.7653196951178245!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
     ],
   },
