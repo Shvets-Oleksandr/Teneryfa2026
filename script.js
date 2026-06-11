@@ -35,19 +35,7 @@ const tripData = [
           '<iframe src="https://www.google.com/maps/embed?pb=!4v1779954022116!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHEzT3loWnc.!2m2!1d28.16529898293365!2d-16.6369230194622!3f214.21439015738676!4f-10.389507572186076!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "12:00 – 14:00",
-        title: "Teide Teleférico",
-        navUrl: "https://maps.app.goo.gl/KjXmGivRZSqspM1bA",
-        mapIframe:
-          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.4082036784416!2d-16.625360260850254!3d28.25563670365553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8385d9ab9637%3A0x4aaebf1d939f900a!2sAparcamiento%20del%20telef%C3%A9rico%20del%20Pico%20del%20Teide!5e0!3m2!1spl!2spl!4v1779957613119!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        desc: "Wjazd kolejką na wulkan. Pamiętaj, że na górze jest zimno!",
-        parkDesc:
-          "Przy dolnej stacji kolejki jest duży, bezpłatny parking. Porada: Parking zapełnia się błyskawicznie. Ponieważ macie wjazd na 12:00, bądźcie na miejscu minimum 30-40 minut wcześniej. Jeśli zabraknie miejsc na głównym placu, ludzie parkują wzdłuż drogi, co oznacza dodatkowy spacer pod górę z dzieckiem.",
-        streetViewIframe:
-          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779957825283!6m8!1m7!1s7AMJLwurxOQ6sChtLlgK4Q!2m2!1d28.25617163481968!2d-16.62314821441575!3f352.9328356105298!4f0.1081054031439237!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-      },
-      {
-        time: "14:15 – 15:30",
+        time: "11:50 – 12:40",
         title: "Roques de García",
         navUrl: "https://maps.app.goo.gl/qcjeJbV65DpmFgP48",
         mapIframe:
@@ -57,6 +45,18 @@ const tripData = [
           "Duży darmowy parking znajduje się przy punkcie widokowym Mirador de la Ruleta (naprzeciwko hotelu Parador). Porada: To jedno z najbardziej zatłoczonych miejsc w parku. Rotacja aut jest jednak duża – jeśli nie ma miejsca, warto postać 5 minut i poczekać, aż ktoś wyjedzie.",
         streetViewIframe:
           '<iframe src="https://www.google.com/maps/embed?pb=!4v1780485146282!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ253YUdEd0FF!2m2!1d28.22523223911946!2d-16.63149800841395!3f20.440599466119195!4f-5.01314213450901!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      },
+      {
+        time: "13:10 – 15:15",
+        title: "Teide Teleférico",
+        navUrl: "https://maps.app.goo.gl/KjXmGivRZSqspM1bA",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.4082036784416!2d-16.625360260850254!3d28.25563670365553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8385d9ab9637%3A0x4aaebf1d939f900a!2sAparcamiento%20del%20telef%C3%A9rico%20del%20Pico%20del%20Teide!5e0!3m2!1spl!2spl!4v1779957613119!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        desc: "Wjazd kolejką na wulkan. Pamiętaj, że na górze jest zimno!",
+        parkDesc:
+          "Przy dolnej stacji kolejki jest duży, bezpłatny parking. Porada: Parking zapełnia się błyskawicznie. Ponieważ macie wjazd na 12:00, bądźcie na miejscu minimum 30-40 minut wcześniej. Jeśli zabraknie miejsc na głównym placu, ludzie parkują wzdłuż drogi, co oznacza dodatkowy spacer pod górę z dzieckiem.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779957825283!6m8!1m7!1s7AMJLwurxOQ6sChtLlgK4Q!2m2!1d28.25617163481968!2d-16.62314821441575!3f352.9328356105298!4f0.1081054031439237!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
         time: "16:30 – 17:15",
@@ -118,24 +118,38 @@ const tripData = [
   },
   {
     day: "Dzień 3 (18.06): Zoo i Północ",
-    dayTips: "Bilety do Loro Parque warto mieć kupione wcześniej na telefonie.",
-    dayChecklist: ["Bilety wstępu", "Wygodne buty do chodzenia"],
+    dayTips:
+      "Logistyka w Loro Parque: Przy wejściu koniecznie weźcie mapkę z godzinami pokazów (orki, delfiny, lwy morskie, papugi). Zaplanujcie dzień wokół nich, bo to główna atrakcja. Pokazy są tak skoordynowane, że da się zobaczyć wszystkie, ale między nimi trzeba przejść przez park. Na pokaz orek i delfinów warto przyjść 15-20 minut wcześniej, żeby zająć dobre miejsca (uwaga na 'Splash Zone' – tam można zostać całkowicie zmoczonym!). Jedzenie: W Loro Parque jedzenie jest dość drogie i typowo fast-foodowe. Można bez problemu wnieść własne przekąski i wodę dla dziecka. Bilety do Loro Parque warto mieć kupione wcześniej na telefonie.",
+    dayChecklist: [
+      "Bilety wstępu",
+      "Wygodne buty do chodzenia",
+      "Woda",
+      "Jedzenie",
+    ],
     events: [
       {
-        time: "10:00",
+        time: "10:00 – 16:00",
         title: "Loro Parque",
-        navUrl: "https://maps.google.com/?q=28.407955,-16.564612",
+        navUrl: "https://maps.app.goo.gl/PYQhDLc8uHAzqE718",
         desc: "Pokazy orek, delfinów i pingwinarium.",
-        parkDesc: "Główny, duży parking płatny przy zoo.",
-        img: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.00008468281!2d-16.56595767026326!3d28.408685125742217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7f004df8573d%3A0x31046b12b67bffc2!2sFree%20Parking!5e0!3m2!1spl!2spl!4v1781198272929!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        parkDesc:
+          "Gdzie parkować: Park posiada własny, duży parking płatny (ok. 5-7 EUR za dzień). Jeśli przyjedziecie na 10:00, bez problemu tam zaparkujecie. Alternatywa: Szukanie darmowych miejsc wzdłuż urokliwej plaży Playa de los Roques lub na ulicach dzielnicy Punta Brava, ale wiąże się to z dłuższym spacerem i stresem. Oficjalny parking to najlepsza opcja.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1781198573028!6m8!1m7!1sMPE0FgsxAt0JNT_TdyMWfA!2m2!1d28.40915289391945!2d-16.56642963535351!3f145.6297406585547!4f2.353445312042183!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "16:30",
+        time: "16:30 – 17:30",
         title: "Barranco de Ruiz",
-        navUrl: "https://maps.google.com/?q=28.389144,-16.638421",
+        navUrl: "https://maps.app.goo.gl/62c2xuJYPZr18qLB8",
         desc: "Malowniczy wąwóz – chwila oddechu w naturze.",
-        parkDesc: "Mały, bezpłatny parking przy strefie rekreacyjnej.",
-        img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.4830683386435!2d-16.62681594549143!3d28.391113487447374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7e07aabb9679%3A0x48cd619d56a3bb36!2sZona%20Recreativa%20Barranco%20de%20Ruiz!5e0!3m2!1spl!2spl!4v1781198980585!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        parkDesc:
+          "Bezpośrednio przy drodze TF-5, przy strefie rekreacyjnej (Área Recreativa Barranco de Ruiz), znajduje się bezpłatny parking na kilkanaście aut.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1781199224385!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ05oOF9yV3c.!2m2!1d28.39116359353753!2d-16.62635150610592!3f219.70723724273304!4f-19.43750037089069!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
     ],
   },
