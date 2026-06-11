@@ -1,6 +1,6 @@
 const tripData = [
   {
-    day: "Dzień 1 (16.06): Wulkaniczna Potęga",
+    day: "Dzień 1 (16.06): Wulkaniczna Potęga i Najwyższa Wioska. Ta trasa prowadzi prosto z biura Plus Car pod górę, przez lasy sosnowe aż do księżycowego krajobrazu Teide.",
     // PORADY DLA CAŁEGO DNIA 1
     dayTips:
       "Droga powrotna przez pasmo grzbietowe (w stronę Chipeque) jest piękna, ale długa. Wyjedźcie z Las Chafiras z przynajmniej połową baku – na terenie parku narodowego jest tylko jedna, droga stacja benzynowa (przy hotelu Parador).",
@@ -73,7 +73,7 @@ const tripData = [
     ],
   },
   {
-    day: "Dzień 2 (17.06): Zachodnie Wybrzeże",
+    day: "Dzień 2 (17.06): Zachodnie Wybrzeże i Złoty Piasek. Relaksujący dzień z morskimi zwierzętami i jedną z najładniejszych plaż.",
     dayTips:
       "Choroba morska: Ocean w okolicach Los Gigantes bywa spokojny, ale na mniejszej łodzi i tak kołysze. Jeśli córka ma skłonności do choroby lokomocyjnej, warto podać jej lek odpowiednio wcześniej przed rejsem. Zawsze sprawdzaj stan oceanu przed wejściem do naturalnych basenów!Jeśli fale mocno uderzają o murek i woda w basenie gotuje się, zrezygnujcie z kąpieli z dzieckiem",
     dayChecklist: ["Ręczniki i stroje kąpielowe", "Krem przeciwsłoneczny"],
@@ -117,7 +117,7 @@ const tripData = [
     ],
   },
   {
-    day: "Dzień 3 (18.06): Zoo i Północ",
+    day: "Dzień 3 (18.06): Królestwo Zwierząt i Północna Natura. Dzień pełen emocji w najlepszym zoo świata i chwila oddechu w wąwozie.",
     dayTips:
       "Logistyka w Loro Parque: Przy wejściu koniecznie weźcie mapkę z godzinami pokazów (orki, delfiny, lwy morskie, papugi). Zaplanujcie dzień wokół nich, bo to główna atrakcja. Pokazy są tak skoordynowane, że da się zobaczyć wszystkie, ale między nimi trzeba przejść przez park. Na pokaz orek i delfinów warto przyjść 15-20 minut wcześniej, żeby zająć dobre miejsca (uwaga na 'Splash Zone' – tam można zostać całkowicie zmoczonym!). Jedzenie: W Loro Parque jedzenie jest dość drogie i typowo fast-foodowe. Można bez problemu wnieść własne przekąski i wodę dla dziecka. Bilety do Loro Parque warto mieć kupione wcześniej na telefonie.",
     dayChecklist: [
