@@ -154,46 +154,63 @@ const tripData = [
     ],
   },
   {
-    day: "Dzień 4 (19.06): Dzika Anaga i Teno",
+    day: "Dzień 4 (19.06): Dzika Anaga i Koniec Świata. Ostatni dzień - to najbardziej fotogeniczne miejsca Teneryfy.",
     dayTips:
-      "Pamiętaj o restrykcjach wjazdu na Punta de Teno – kluczowy jest autobus 369.",
+      "Droga do Buenavista przez Masca (TF-436): Odcinek prowadzący przez góry Teno (w okolicach Mirador Altos de Baracán) jest niezwykle kręty, wąski i stromy. To wymagająca trasa dla kierowcy – jedźcie powoli, trzymajcie się swojej strony i trąbcie delikatnie przed zakrętami o zerowej widoczności. Jeśli nie czujesz się pewnie za kółkiem na bardzo stromych serpentynach, bezpieczniejszą (choć dłuższą) alternatywą jest dojazd do Buenavista od północnej strony (przez Icod de los Vinos i Garachico). Autobus 369 na Punta de Teno: Autobus kursuje mniej więcej co godzinę. Koniecznie miejcie przy sobie gotówkę w drobnych euro lub kartę płatniczą (można płacić kartą u kierowcy, ale w górach czasem ucieka zasięg terminala). Droga autobusem jedzie nad przepaściami i przez tunele – dla dziecka to dodatkowa atrakcja! Logistyka powrotu i tankowanie: Przed oddaniem auta w Las Chafiras musicie je zatankować do takiego samego stanu, jaki otrzymaliście (zazwyczaj do pełna). Tuż przy strefie przemysłowej w Las Chafiras, niedaleko biura Plus Car, znajduje się kilka dużych i tańszych stacji benzynowych (np. Shell, Petrol属性 lub Texaco). Zostawcie sobie na to 15 minut przed godziną 21:00.",
     dayChecklist: [
       "Sprawdzenie rozkładu autobusu 369",
+      "Drobne na autobus 369",
       "Kurtka przeciwdeszczowa do Anagi",
+      "Zatankowac auto, przed otdaniem",
     ],
     events: [
       {
-        time: "10:00",
+        time: "10:00-11:00",
         title: "Camino Viejo al Pico del Inglés",
-        navUrl: "https://maps.google.com/?q=28.532391,-16.267633",
+        navUrl: "https://maps.app.goo.gl/uWZxjZ86HHx8go1p8",
         desc: "Słynny tunel w lesie laurowym (Anaga).",
-        parkDesc: "Zatoczka na 2-3 samochody bezpośrednio przy wejściu.",
-        img: "https://images.unsplash.com/photo-1444333509402-1a40316e6417?auto=format&fit=crop&w=800",
-      },
-      {
-        time: "13:00",
-        title: "Mirador Altos de Baracán",
-        navUrl: "https://maps.google.com/?q=28.339455,-16.852331",
-        desc: "Góry Teno - granica między zieloną a suchą częścią wyspy.",
-        parkDesc: "Mała zatoczka parkingowa na kilka aut.",
-        img: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800",
-      },
-      {
-        time: "14:30",
-        title: "Punta de Teno",
-        navUrl: "https://maps.google.com/?q=28.371192,-16.852445",
-        desc: "Latarnia morska. Wjazd tylko autobusem 369 z Buenavista!",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2084.1819551146127!2d-16.26869204917081!3d28.534841920455058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cff706d04a7f%3A0x579c961684c8407c!2sCamino%20viejo%20al%20pico%20del%20ingl%C3%A9s!5e0!3m2!1spl!2spl!4v1781200065338!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         parkDesc:
-          "Auto zostawiacie na dworcu w Buenavista del Norte i stamtąd jedziecie autobusem publicznym.",
-        img: "https://images.unsplash.com/photo-1500049241444-d5966d9b6028?auto=format&fit=crop&w=800",
+          "Tuż obok słynnego 'tunelu' laurowego (który znajduje się na starej, zamkniętej dla ruchu drodze) jest mała zatoczka na kilka samochodów. Kawałek dalej jest duży parking przy samym punkcie widokowym Mirador del Pico del Inglés. Najlepiej zaparkować tam i podejść kawałek pieszo.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1781200181427!6m8!1m7!1s4G_7ns_4oDk_C6tp9OQc5Q!2m2!1d28.53497417410992!2d-16.26849986809447!3f67.34400213263203!4f5.4024135103315984!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
       {
-        time: "20:00",
+        time: "13:00 – 13:45",
+        title: "Mirador Altos de Baracán",
+        navUrl: "https://maps.app.goo.gl/xD84QKDYfACHeeKQ8",
+        desc: "Góry Teno - granica między zieloną a suchą częścią wyspy.",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.262385649543!2d-16.85780271059659!3d28.327853946891867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a8a5c55de45db%3A0x26a504071cb03353!2sMirador%20Altos%20de%20Barac%C3%A1n!5e0!3m2!1spl!2spl!4v1781200488166!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        parkDesc:
+          "Przy samej drodze TF-436 znajduje się wyznaczona, darmowa zatoczka parkingowa na kilkanaście samochodów.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1781200776074!6m8!1m7!1sCAoSHENJQUJJaEFEeWM1VU54YU1WbWZBbDFnQUFIOWU.!2m2!1d28.32785558144085!2d-16.85611236240211!3f323.53383919609!4f-21.36256660644436!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      },
+      {
+        time: "14:30 – 17:30",
+        title: "Punta de Teno (Buenavista del Norte – przesiadka na autobus)",
+        navUrl: "https://maps.app.goo.gl/kNsuUhQ3DpuD589h9",
+        desc: "Latarnia morska. Wjazd tylko autobusem 369 z Buenavista!",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.6544052299594!2d-16.848695953701405!3d28.370407962085626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a6145683db6e5%3A0x7aa96bdd3c55fa09!2sEstaci%C3%B3n%20de%20Guaguas%20Buenavista%20del%20Norte!5e0!3m2!1spl!2spl!4v1781201127091!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        parkDesc:
+          "Ponieważ wjazd na Punta de Teno autem prywatnym jest w ciągu dnia zamknięty, samochód musicie zostawić w miejscowości Buenavista del Norte. Najwygodniej zaparkować na bezpłatnym parkingu tuż przy dworcu autobusowym (Estación de Autobuses de Buenavista del Norte) lub przy okolicznych ulicach. Stamtąd wsiadacie w autobus linii 369.",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1781201283789!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2F1YXVUSnc.!2m2!1d28.34215003701121!2d-16.92251477662954!3f261.0674575293815!4f-3.976811102200628!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      },
+      {
+        time: "20:00 – 21:00",
         title: "Zwrot auta (Las Chafiras)",
-        navUrl: "https://maps.google.com/?q=28.058774,-16.613589",
+        navUrl: "https://maps.app.goo.gl/Nf6jSo78UeVdhBuW8",
         desc: "Zatankuj przed oddaniem! Koniec przygody.",
+        mapIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6689.727159084362!2d-16.61190766941786!3d28.052311007519783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a9f3dad2b9597%3A0x4eea3c0821d4c87d!2sPlus%20Car%20Rent%20a%20Car!5e0!3m2!1spl!2spl!4v1779957042671!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+
         parkDesc: "Zwrot na placu głównym Plus Car.",
-        img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800",
+        streetViewIframe:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1779956448827!6m8!1m7!1skoU8Ux49h08DzRwC8grNKw!2m2!1d28.05206661827112!2d-16.608422317487!3f356.05751310964!4f-4.870469298641979!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       },
     ],
   },
